@@ -4,8 +4,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sciensoft</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-  
+  <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white">
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <div class="w-full relative flex justify-between items-center lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+        <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-black" href="#pablo">
+          pink Tailwind Starter Kit
+        </a>
+        <button class="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="lg:flex flex-grow items-center hidden" id="example-collapse-navbar">
+        <ul class="flex flex-col items-center lg:flex-row list-none">
+          <li class="nav-item">
+            <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="#pablo">
+            <span class="ml-2">About</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="#pablo">
+            <span class="ml-2">Services</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="#pablo">
+            <span class="ml-2">Industries</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="#pablo">
+            <span class="ml-2">Case Studies</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="#pablo">
+            <span class="ml-2">Blog</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="px-4 py-4 flex items-center text-xs uppercase font-bold leading-snug text-white text-center bg-blue-600 hover:bg-blue-700" href="#pablo">
+            <span>Let's Talk</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            
+            <div class="px-3 py-2 flex items-center  text-sm uppercase font-bold leading-snug text-white hover:opacity-75 bg-blue-600 rounded-full" ></a>
+              <input class="hidden search" type="text">
+              <span>
+                <i onclick="openSearch()" class="fas fa-search cursor-pointer text-base "></i>
+              </span>
+            </div>
+            <i onclick="closeSearch()" class="fas fa-times cursor-pointer text-base hidden"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script>
+    let searchField = document.querySelector('.search');
+    let searchIcon = document.querySelector('.fa-search');
+    let closeIcon = document.querySelector(".fa-times");
+    function toggleNavbar(collapseID){
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("flex");
+    }
+    function openSearch () {
+      searchField.style.display = "flex";
+      searchIcon.style.display = "none";
+      closeIcon.style.display = "flex"
+    }
+    function closeSearch () {
+      searchField.style.display = "none";
+      searchIcon.style.display = "flex";
+      closeIcon.style.display = "none"
+    }
+  </script>
+
 </body>
 </html>
