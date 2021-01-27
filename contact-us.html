@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Details Sciensoft</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- header -->
+  <div class="px-10 md:px-16 lg:px-32 py-4">
+    <div class="flex justify-between items-center">
+      <img class="w-32"
+        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+        alt="Microsoft ASP.NET">
+      <div id="searchbar" class="flex justify-end items-center w-4/5">
+        <ul class="w-11/12 hidden lg:flex  justify-end items-center font-semibold list-none uppercase text-black">
+          <li id="about" onmousedown=""
+            class="mr-8 border-white hover:border-blue-700 cursor-pointer hover:text-blue-500">
+            About
+          </li>
+          <li id="services" class="mr-8 cursor-pointer hover:text-blue-500">
+            Services
+          </li>
+          <li id="industries" class="mr-8 cursor-pointer hover:text-blue-500">
+            Industries
+          </li>
+          <li class="mr-8 cursor-pointer hover:text-blue-500">
+            <a href="#">
+              Case studies
+            </a>
+          </li>
+          <li class="mr-8 cursor-pointer hover:text-blue-500">
+            <a href="#">Blog</a>
+          </li>
+          <li class="flex justify-center items- center bg-blue-700 text-white px-4 py-2 mr-6 hover:bg-blue-900">
+            <a href="#">Let's talk</a>
+          </li>
+        </ul>
+        <!-- Search Bar -->
+        <div onclick="searchBarClick()"
+          class="flex justify-center cursor-pointer items-center bg-blue-700 rounded-full text-white p-2 hover:bg-blue-900">
+          <i class="fa fa-search fa-xl"></i>
+        </div>
+        <div class="flex lg:hidden ml-4">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div id="exitbar" class="w-full h-10 justify-between ml-4 items-center hidden bg-white">
+        <input type="text" name="" class=" border-2 outline-none w-full z-50 mr-2 p-3">
+        <div class="flex w-12 h-12 justify-center items-center z-50 rounded-full bg-white">
+          <i onclick="exitClick()" class="fa fa-times text-black text-3xl z-50"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Us -->
+  <div class="flex mb-96">
+    <div class="container mx-auto justify-between max-w-7xl h-96 ">
+      <h2 class="pl-2 py-5 text-7xl">Contact Us</h2>
+      <div class="h-0.5 w-10 mb-5 pl-4 mx-3 bg-yellow-500 "></div>
+      <div class="md:flex-row w-full min-h-full bg-gray-200 justify-between flex flex-row  flex-col">
+        <div class="md:w-4/12 w-full min-h-full bg-white ">
+          <h2 class="font-bold text-center text-2xl pt-5">ScienceSoft in brief</h2><br>
+          <div class="flex">
+            <i class="text-2xl fas fa-check text-green-600 pl-6 pr-3  py-3"></i>
+            <p class="text-lg py-3"><span class="font-semibold">31 years</span> in IT.</p>
+          </div>
+          <!-- -------------------------------------------- -->
+          <div class="flex">
+            <i class="text-2xl fas fa-check text-green-600 pl-6 pr-3 py-3"></i>
+            <p class="text-lg py-3">Over<span class="font-semibold">700 specialists</span>on board.</p>
+          </div>
+          <!-- -------------------------------------------- -->
+          <div class="flex">
+            <i class="text-2xl fas fa-check text-green-600 pl-6 pr-3 py-3"></i>
+            <p class="text-lg py-3">700-employee business<span class="font-semibold">partner network.</span></p>
+          </div>
+          <!-- -------------------------------------------- -->
+          <div class="flex mb-10">
+            <i class="text-2xl fas fa-check text-green-600 pl-6 pr-3 py-3"></i>
+            <p class="text-lg py-3"><span class="font-semibold">2,695</span>success stories (including projects
+              for Walmart, eBay, NASA JPL, Baxter, IBM).</p>
+          </div>
+          <!-- -------------------------------------------- -->
+
+
+          <div class="owl-carousel owl-theme  w-20   flex items-center justify-center">
+            <div class="item w-64 mx-auto my-auto flex items-center justufy-center">
+              <img class="my-auto" src="https://www.scnsoft.com/partners/sw-development/microsoft-gold-partner.svg"
+                alt="">
+            </div>
+            <div class="item  w-64 mx-auto">
+              <img
+                src="https://www.scnsoft.com/partners/sw-development/aws-select-consulting-partner-horizontal-placement.svg"
+                alt="">
+            </div>
+            <div class="item w-64 mx-auto my-auto flex items-center justufy-center">
+              <img src="https://www.scnsoft.com/partners/sw-development/oracle-silver-partner.svg" alt="">
+            </div>
+            <div class="item w-64 mx-auto">
+              <img src="https://www.scnsoft.com/partners/sw-development/ibm-silver-business-partner.svg" alt="">
+            </div>
+            <div class="item w-64 mx-auto">
+              <img src="https://www.scnsoft.com/partners/servicenow/servicenow-premier-partner-horizontal-placement.svg"
+                alt="">
+            </div>
+            <div class="item w-64 mx-auto">
+              <img
+                src="https://www.scnsoft.com/partners/sw-development/clutch-top-it-services-firms-horizontal-placement.svg"
+                alt="">
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="md:w-8/12 w-full min-h-96">
+          <p class="text-center text-lg pt-5 text-gray-400">Drop us a line, and our rep will contact you within 30
+            minutes to arrange an initial discussion.</p>
+          <form action="" class="w-full flex-col">
+            <div class="m-3 flex justify-around pb-5">
+              <input class="p-3 w-2/4 mx-2 border-solid border-2 border-black" type="text" id="" name=""
+                placeholder="Full Name">
+              <input class="p-3 w-2/4 mx-2 border-solid border-2 border-black" type="text" id="" name=""
+                placeholder="Company">
+            </div>
+            <div class="m-3 flex justify-around">
+              <input class="p-3 w-2/4 mx-2 border-solid border-2 border-black" type="text" id="" name=""
+                placeholder="Work Email">
+              <input class="p-3 w-2/4 mx-2 border-solid border-2 border-black" type="text" id="" name=""
+                placeholder="Work Phone">
+
+            </div>
+
+            <div class="m-3 flex  items-center ">
+              <textarea class="flex  p-3 w-full  mx-2 border-solid border-2 border-black" name="" id="" cols="30" rows="4"
+                placeholder="Comments"></textarea>
+            </div>
+
+            <div class="text-center">
+              <input id="upload" class="hidden" type="file">
+              <span><label class="cursor-pointer" for="upload"><i class="fas fa-paperclip"></i> </label> Drag
+                & Drop file here or</span>
+              <label class="text-blue-700 cursor-pointer" for="upload">browse a file </label>
+              <span>(Up to 5 files of 20MB overall)</span>
+            </div>
+            <div class="w-full flex items-center justify-center py-5">
+              <button type="button"
+                class="flex items-center border-2 border-blue-700 py-2 px-3 text-white bg-blue-700">Discuss my
+                needs</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div onclick="scrollToUp()"
+    class="fixed bottom-3 left-3 bg-blue-700 opacity-50 z-50 flex justify-center items-center cursor-pointer w-8 h-8 rounded-full text-white hover:opacity-100">
+    <i class="fa fa-chevron-up text-white"></i>
+  </div>
+  <!-- FOOTER -->
+  <footer class="footer mt-96 md:mt-2 bg-blue-900 relative px-4 md:px-10  lg:px-16 py-6 ">
+    <div class="">
+      <div class="">
+        <div class=" sm:mt-0 sm:w-full sm:px-8 flex-col md:flex-row flex-wrap  justify-between">
+          <div class="flex justify-between items-center w-full flex-wrap">
+            <div class="flex justify-between w-full items-center flex-wrap">
+              <span>
+                <img class="w-56 mt-4"
+                  src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+                  alt="Microsoft ASP.NET">
+              </span>
+              <span class="my-2 text-white flex flex-row items-start text-base  mt-4">
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="#" class="text-white text-opacity-70 text-md hover:text-white ml-2">5900 S. Lake Forest Drive
+                  Suite 300, <br />
+                  McKinney, Dallas area, TX 75070</a>
+              </span>
+              <span class="my-2 text-white text-base mr-5 mt-4">
+                <i class="fas fa-phone-alt"></i>
+                <a href="#" class="text-white text-opacity-70 text-md hover:text-white ml-2">+1 214 306 68 37</a>
+              </span>
+              <span class="my-2 text-white text-base mr-5 mt-4">
+                <i class="fas fa-envelope"></i>
+                <a href="#"
+                  class="text-white text-opacity-70 text-md hover:text-white underline ml-2">contact@scnsoft.com</i></a>
+              </span>
+              <div class="my-2 flex mt-4 w-full md:w-16">
+                <a href="#" class="text-white   hover:text-gray-50 mr-3"><i class="fab fa-dribbble"></i></a>
+                <a href="#" class="text-white  hover:text-gray-50 mr-3"> <i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white   hover:text-gray-50 mr-3"> <i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white fa-2xl  hover:text-gray-50 mr-3"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <hr class="mt-5 border-t-2 border-gray-100 flex flex-wrap items-center">
+          <div class="flex justify-between flex-wrap w-full mt-5">
+            <div class="flex flex-row flex-wrap ">
+              <span class="text-base underline w-full md:w-48 text-white text-opacity-70 mr-5 hover:text-white">About
+                ScienceSoft</span>
+              <span class="w-full md:w-48"><a href="#"
+                  class="text-base text-white  underline mr-5 text-opacity-70 text-md hover:text-white">Join Us as an
+                  agent</a></span>
+              <span class="w-full md:w-48"><a href="#"
+                  class="text-base  text-white  underline mr-5 text-opacity-70 text-md hover:text-white">Privacy
+                  Policy</a></span>
+              <span class="w-full md:w-48"><a href="#"
+                  class="text-base text-white  underline mr-5 text-opacity-70 text-md hover:text-white">Terms of
+                  Use</a></span>
+            </div>
+            <div>
+              <span class="my-2 text-base text-white text-opacity-70 text-md ">For press inquries:<a
+                  href="mailto: contact@scnsoft.com"
+                  class="text-white underline text-opacity-70 text-md hover:text-white">
+                  contact@scnsoft.com</a></span>
+            </div>
+          </div>
+          <div class="flex  mt-5">
+            <span class=" text-white text-opacity-70  mt-4 mb-10 md:mt-0 mb-2"> 2021 ScienceSoft USA Corporation.
+              All rights reserved.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script src="js/index.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: false,
+      margin: 10,
+      dots: false,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

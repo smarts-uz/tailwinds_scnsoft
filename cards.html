@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Service Card</title>
+</head>
+
+<body>
+  <!-- <div class="rounded-sm border-2 transition-shadow hover:shadow-xl p-2 md:p-8">
+    <div class="flex flex-col md:flex-row  items-center">
+      <div class="flex justify-center items-center w-2/5 text-xl mr-0 md:mr-8 mb-8 md:mb-0">
+        <img class="w-full h-full md:w-60 md:h-60" src="https://www.scnsoft.com/---home-page-illustrations/clients/ebay.svg" alt="">
+      </div>
+      <div class=" flex flex-col w-3/5">
+        <h1 class="text-3xl md:text-4xl font-bold">Tailored pricing plan</h1>
+        <hr class="w-12 border-yellow-600 text-gray-800 my-4">     
+        <p class=" text-gray-500 text-xl md:text-2xl">
+          We calculate custom-made pricing plans to meet your expectations and adjust pricing if your
+          requirements change
+          during our cooperation.
+        </p>
+      </div>
+    </div>
+  </div> -->
+    <header class="pb-20">
+      <!--  -->
+      <div class="px-10 md:px-16 lg:px-16 py-4 ">
+        <div class="flex justify-between items-center">
+          <img class="w-32"
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+            alt="Microsoft ASP.NET">
+          <div id="searchbar" class="flex justify-end items-center w-4/5">
+            <ul class="w-11/12 hidden lg:flex  justify-end items-center font-semibold list-none uppercase text-black">
+              <li id="about" class="mr-8 border-white hover:border-blue-700 cursor-pointer hover:text-blue-500">
+                About
+              </li>
+              <li id="services" class="mr-8 cursor-pointer hover:text-blue-500">
+                Services
+              </li>
+              <li id="industries" class="mr-8 cursor-pointer hover:text-blue-500">
+                Industries
+              </li>
+              <li class="mr-8 cursor-pointer hover:text-blue-500">
+                <a href="#">
+                  Case studies
+                </a>
+              </li>
+              <li class="mr-8 cursor-pointer hover:text-blue-500">
+                <a href="#">Blog</a>
+              </li>
+              <li class="flex justify-center items- center bg-blue-700 text-white px-4 py-2 mr-6 hover:bg-blue-900">
+                <a href="#">Let's talk</a>
+              </li>
+            </ul>
+            <!-- Search Bar -->
+            <div 
+              onclick="searchBarClick()" 
+              class="flex justify-center cursor-pointer items-center bg-blue-700 rounded-full text-white p-2 hover:bg-blue-900">
+              <i class="fa fa-search fa-xl"></i>
+            </div>
+            <div class="flex lg:hidden ml-4">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+          <div id="exitbar" class="w-full h-10 justify-between ml-4 items-center hidden bg-white">
+            <input type="text" name="" class=" border-2 outline-none w-full z-50 mr-2 p-3">
+            <div class="flex w-12 h-12 justify-center items-center z-50 rounded-full bg-white">
+              <i onclick="exitClick()" class="fa fa-times text-black text-3xl z-50"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-10 md:px-16 lg:px-36 flex flex-col justify-center items-center text-center mt-20">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 font-semibold">SOFTWARE CONSULTING AND
+          DEVELOPMENT FOR YOUR DIGITAL SUCCESS</h1>
+        <hr class="w-20 h-1 bg-yellow-600 my-10 ">
+        <p class="text-center text-base sm:text-lg md:text-xl lg:text-2xl leading-10 text-gray-700 ">For over 31 years. For
+          millions of users. We transform businesses with powerful and adaptable digital solutions that
+          satisfy the needs of today and unlock the opportunities of tomorrow.</p>
+      </div>
+    </header>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

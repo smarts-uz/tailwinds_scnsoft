@@ -32,3 +32,77 @@ function exitClick() {
   exit.style.display = 'none';
   search.style.display = 'flex'
 }
+
+function scrollToUp() {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
+  });
+}
+
+const dropdown_one = document.getElementById('dropdown-one');
+
+function DropDownOne() {
+  // dropdown_one.style.display = 'flex';
+  if (dropdown_one.style.display === 'flex')
+  {
+    dropdown_one.style.display = 'none';
+  }
+  else {
+    dropdown_one.style.display = 'flex';
+  }
+}
+
+// menu open
+const sidebarMenu = document.querySelector(".sidebar-menu");
+const dropdownContainerAbout = document.querySelector(".dropdown-container-about");
+const dropdownContainerServices = document.querySelector(".dropdown-container-Services");
+const dropdownContainerIndustries = document.querySelector(".dropdown-container-Industries");
+const arrowDownAbout = document.querySelector(".arrowDownAbout");
+const arrowUpAbout = document.querySelector(".arrowUpAbout");
+const arrowDownServices = document.querySelector(".arrowDownServices");
+const arrowUpServices = document.querySelector(".arrowUpServices");
+const arrowDownIndustries = document.querySelector(".arrowDownIndustries");
+const arrowUpIndustries = document.querySelector(".arrowUpIndustries");
+const darkBody = document.querySelector('.dark');
+function openSidebarMenu() {
+  sidebarMenu.style.display = "flex";
+  document.body.classList.add('dark')
+ 
+}
+function closeSidebarMenu() {
+  sidebarMenu.style.display = "none";
+  document.body.classList.remove('dark')
+}
+// dropdown
+function dropdownBtnAbout() {
+  dropdownContainerAbout.style.display = "flex";
+  arrowDownAbout.style.display = "none";
+  arrowUpAbout.style.display = "inline-block";
+}
+function dropdownBtnServices() {
+  dropdownContainerServices.style.display = "flex";
+  arrowDownServices.style.display = "none";
+  arrowUpServices.style.display = "inline-block";
+}
+function dropdownBtnIndustries() {
+  dropdownContainerIndustries.style.display = "flex";
+  arrowDownIndustries.style.display = "none";
+  arrowUpIndustries.style.display = "inline-block";
+}
+function closedropdownAbout() {
+  dropdownContainerAbout.style.display = "none";
+  arrowDownAbout.style.display = "inline-block";
+  arrowUpAbout.style.display = "none";
+}
+function closedropdownServices() {
+  dropdownContainerServices.style.display = "none";
+  arrowDownServices.style.display = "inline-block";
+  arrowUpServices.style.display = "none";
+}
+function closedropdownIndustries() {
+  dropdownContainerIndustries.style.display = "none";
+  arrowDownIndustries.style.display = "inline-block";
+  arrowUpIndustries.style.display = "none";
+}
