@@ -361,7 +361,7 @@
                 <a href="#">Blog</a>
               </li>
               <li class="flex justify-center items- center bg-blue-700 text-white px-4 py-2 mr-6 hover:bg-blue-900">
-                <a href="/contact-us">Let's talk</a>
+                <a href="/contact-us.html">Let's talk</a>
               </li>
             </ul>
             <!-- Search Bar -->
@@ -1419,8 +1419,10 @@
   
   
 
-  
-  <!-- FOOTER -->
+  <div onclick="scrollToUp()"
+    class="fixed bottom-3 left-3 bg-blue-700 opacity-50 z-50 flex justify-center items-center cursor-pointer w-8 h-8 rounded-full text-white hover:opacity-100">
+    <i class="fa fa-chevron-up text-white"></i>
+  </div>
   
     <!-- FOOTER -->
     <footer class="footer bg-blue-900 relative px-4 md:px-10  lg:px-16 py-6 ">
@@ -1492,28 +1494,47 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script src="js/index.js"></script>
   <script>
-    $(document).ready(function () {
-        $('.customer-logos').slick({
-          slidesToShow: 6,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 1000,
-          arrows: false,
-          dots: false,
-          pauseOnHover: false,
-          responsive: [{
-            breakpoint: 768,
-            setting: {
-              slidesToShow: 4
+
+    $(document).ready(() => {
+      $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: false
             }
-          }, {
-            breakpoint: 520,
-            setting: {
-              slidesToShow: 3
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
             }
-          }]
-        });
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
       });
+    });
+
   </script>
 </body>
 </html>
