@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style-carousel.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Our location</title>
 </head>
@@ -383,36 +384,7 @@
                 </div>
             </div>
         </div>
-        <div class="px-10 md:px-16 lg:px-36 flex flex-col justify-center items-center text-center mt-20">
-            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 font-semibold">SOFTWARE CONSULTING AND
-                DEVELOPMENT FOR YOUR DIGITAL SUCCESS</h1>
-            <hr class="w-20 h-1 bg-yellow-600 my-10 ">
-            <p class="text-center text-base sm:text-lg md:text-xl lg:text-2xl leading-10 text-gray-700 ">For over 31 years.
-                For
-                millions of users. We transform businesses with powerful and adaptable digital solutions that
-                satisfy the needs of today and unlock the opportunities of tomorrow.</p>
-        </div>
-        <!-- Carousel -->
-        <div class="container">
-            <section class="customer-logos slider px-16">
-                <div class="slide"><img class="h-32 w-32" src="images/baxter.svg" alt="logo"></div>
-                <div class="slide"><img class="h-32 w-32" src="images/deloitte.svg" alt="logo"></div>
-                <div class="slide"><img class="h-32 w-32" src="images/ebay.svg" alt="logo"></div>
-                <div class="slide"><img class="h-32 w-32" src="images/ford.svg" alt="logo"></div>
-                <div class="slide"><img class="h-32 w-32" src="images/ibm.svg" alt="logo"></div>
-                <div class="slide"><img class="h-32 w-32" src="images/leo-burnett.svg" alt="logo"></div>
-                <div class="slide"><img class="h-32 w-32" src="images/nasa_1.svg" alt="logo"></div>
-                <div class="slide"><img class="h-32 w-32" src="images/nestle.svg" alt="logo"></div>
-                <div class="slide"><img class="h-32 w-32" src="images/tieto.svg" alt="logo"></div>
-                <div class="slide"><img class="h-32 w-32" src="images/viber.svg" alt="logo"></div>
-            </section>
-        </div>
     </header>
-
-
-
-
-
 <div class="m-36">
     <div class="text-3xl md:text-5xl font-bold">
         Thinking Globally, Acting Locally
@@ -572,9 +544,36 @@
         </div>
     </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script src="js/index.js"></script>
 
+<script>
 
+    $(document).ready(function () {
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                setting: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                setting: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    });
+
+</script>
 
 </body>
 
